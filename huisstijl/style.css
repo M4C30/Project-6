@@ -9,11 +9,16 @@
 }
 body{
     width: 100%;
+    min-width: 1215px;
+    max-width: 2000px;
     margin: auto;
 }
 /* ========== Header ========== */
 
 header{
+    min-width: 1215px;
+    max-width: 2000px;
+    margin: auto;
     width: 100%;
     height: 70px;
     background-color: #282c2f;
@@ -27,6 +32,7 @@ header{
 #title h2{
     color: #e9eaec;
     font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 20px;
 }
 
 .daItems{
@@ -34,17 +40,26 @@ header{
     color: #e9eaec;
     font-weight: lighter;
     padding-top: 5px;
+    height: 25px;
+    transition: 0.1s;
+    border-radius: 2px;
 }
+
+.daItems:hover{
+    background-color: #3f4346;
+    transition: 0.1s;
+}
+
 #headerItems{
     margin-top: 23px;
     text-align: center;
 }
 #daItemsCover{
     display: grid;
-    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-columns: 90px 90px 90px 90px 270px;
     grid-template-rows: 50px;
     float: right;
-    margin-right: 140px;
+   
 }
 
 #active{
@@ -57,6 +72,24 @@ header{
     background-color: #375f77;
     transition: 0.1s;
 }
+#status{
+    margin-left: 100px;
+    float: right;
+    height: 35px;
+    margin-top: -4px;
+    width: 100px;
+    border: 2px solid #5F6366;
+    border-radius: 2px;
+    background-color: #282C2F;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 15px;
+}
+#status:hover{
+    background-color: #363b3f;
+    transition: 0.1s;
+}
 
 
 /* ========== TYP HIERONDER JOUW CODE ========== */
@@ -64,3 +97,22 @@ header{
 /* ========== TYP HIERBOVEN JOUW CODE ========== */
 
 /* ========== Footer ========== */
+footer{
+    min-width: 1215px;
+    max-width: 2000px;
+    margin: auto;
+    width: 100%;
+    height: 120px;
+    background-color: #282c2f;
+    position: absolute;
+    bottom: 0;
+}
+
+.daFooterItems{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+#socialMedia ul{
+    list-style: none;
+}
