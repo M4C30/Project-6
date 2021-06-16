@@ -30,7 +30,7 @@ header{
     margin-left: 20px;
 }
 
-.daItems{
+a{
     text-decoration: none;
     color: #e9eaec;
     font-weight: lighter;
@@ -40,8 +40,14 @@ header{
     border-radius: 2px;
 }
 
-.daItems:hover{
+a:hover{
     background-color: #3f4346;
+    transition: 0.1s;
+}
+.active:hover{
+    background-color: #375f77;
+    height: 25px;
+    border-radius: 2px;
     transition: 0.1s;
 }
 
@@ -57,15 +63,12 @@ header{
    
 }
 
-#active{
+.active{
     background-color: #2a526b;
     height: 25px;
     border-radius: 2px;
     transition: 0.1s;
-}
-#active:hover{
-    background-color: #375f77;
-    transition: 0.1s;
+
 }
 #status{
     margin-left: 100px;
