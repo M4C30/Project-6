@@ -1,0 +1,17 @@
+/* ========== Fonts ========== */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* ========== Inlogblok ========== */
+h2{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+input{
+    border: 1px solid black;
+    outline: none;
+}
+#inlogblok{
+    margin: auto;
+    width: 500px;
+    align-items: center;
+}
