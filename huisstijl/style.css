@@ -30,7 +30,7 @@ header{
     margin-left: 20px;
 }
 
-a{
+.ayo{
     text-decoration: none;
     color: #e9eaec;
     font-weight: lighter;
@@ -40,7 +40,7 @@ a{
     border-radius: 2px;
 }
 
-a:hover{
+.ayo:hover{
     background-color: #3f4346;
     transition: 0.1s;
 }
@@ -49,6 +49,17 @@ a:hover{
     height: 25px;
     border-radius: 2px;
     transition: 0.1s;
+}
+.active{
+    background-color: #2a526b;
+    text-decoration: none;
+    color: #e9eaec;
+    font-weight: lighter;
+    padding-top: 5px;
+    height: 25px;
+    transition: 0.1s;
+    border-radius: 2px;
+
 }
 
 #headerItems{
@@ -63,13 +74,7 @@ a:hover{
    
 }
 
-.active{
-    background-color: #2a526b;
-    height: 25px;
-    border-radius: 2px;
-    transition: 0.1s;
 
-}
 #status{
     margin-left: 100px;
     float: right;
