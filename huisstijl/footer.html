@@ -14,9 +14,11 @@
             <div id="footerContent">
                 <h3 id="footerTitle">Planco</h3>
                 <div id="nieuwsbrief">
-                    <p>Abonneer je op onze nieuwsbrief!</p>
-                    <input type="text" name="nieuws" id="nieuwsbrief" placeholder="E-Mail">
-                    <button>Verzenden</button>
+                    <p class="footerText">Abonneer je op onze nieuwsbrief!</p>
+                    <form action="php/verzend.php" method="POST">
+                        <input type="text" name="nieuws" id="nieuwsbrief" placeholder="E-Mail">
+                        <input type="submit" name="knopje" value="Verzenden" id="sendConfirmation">
+                    </form>
                 </div>
             </div>
         </div>

@@ -8,9 +8,7 @@
     font-family: 'Libre Franklin', sans-serif;
 }
 body{
-    min-width: 1496px;
     margin: auto;
-    max-width: 3000px;
 }
 /* ========== Header ========== */
 
@@ -128,8 +126,6 @@ header{
 
 /* ========== Footer ========== */
 footer{
-    min-width: 100%;
-    margin: auto;
     width: 100%;
     height: 250px;
     background-color: #282c2f;
@@ -142,4 +138,24 @@ footer{
 #footerTitle{
     color: white;
     font-size: x-large;
+}
+.footerText{
+    color: white;
+    font-size: 14px;
+}
+#sendConfirmation{
+    height: 25px;
+    cursor: pointer;
+    background-color: #2a526b;
+    border: none;
+    border-radius: 2px;
+    color: #e9eaec;
+}
+#sendConfirmation:hover{
+    background-color: #375f77;
+}
+#nieuwsbrief{
+    border: none;
+    text-decoration: none;
+    outline: none;
 }
