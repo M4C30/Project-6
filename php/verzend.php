@@ -9,8 +9,8 @@
 
         $email = SQLite3::escapeString($_POST['nieuws']);
         $headers = array(
-            'From' => 'noreply@planco.com',
-            'Reply-To' => 'noreply@planco.com',
+            'From' => 'noreply@planco.io',
+            'Reply-To' => 'noreply@planco.io',
             'X-Mailer' => 'PHP/' . phpversion()
         );
         $bericht = "";
