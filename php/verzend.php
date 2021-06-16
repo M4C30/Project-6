@@ -1,11 +1,13 @@
 <?php 
-
+    $db= new SQLite3("brief.db");
+    $db ->busyTimeout("5000");
+    
 
 
     if(isset($_POST['knopje']))
     {
 
-        $email = $_POST['nieuws'];
+        $email = SQLite3::escapeString($_POST['nieuws']);
         $headers = array(
             'From' => 'noreply@planco.com',
             'Reply-To' => 'noreply@planco.com',
@@ -24,9 +26,13 @@
         
         mail($email,"Nieuwsbrief Conformatie",$bericht,$headers);
 
-        echo '<script type="text/JavaScript">  window.history.back();   </script>';
-    }
+        
+        $datum = date("d/m/Y");
 
+        $query = "INSERT INTO brief (email,datum) VALUES('$email', '$datum')";
+        $db->exec($query);
+    }
+    echo '<script type="text/JavaScript">  window.history.back();   </script>';
  
 
 
