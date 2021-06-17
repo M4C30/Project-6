@@ -24,7 +24,7 @@
         $bericht .= "Veel geluk namens ons bij Planco!";
 
         
-        mail($email,"Nieuwsbrief Conformatie",$bericht,$headers);
+        mail($email,"Nieuwsbrief Bevestiging",$bericht,$headers);
 
         
         $datum = date("d/m/Y");
