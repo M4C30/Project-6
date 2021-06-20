@@ -145,6 +145,8 @@ footer{
     background-color: #282c2f;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
 }
 footer div{
     max-height: 225px;
