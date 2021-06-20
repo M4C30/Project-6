@@ -9,6 +9,8 @@
 }
 body{
     margin: auto;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 /* ========== Header ========== */
 
@@ -106,10 +108,11 @@ header{
     float: right;
     margin-top: 5px;
     display: grid;
-    grid-template-columns: 120px 80px 120px;
+    grid-template-columns: 80px 120px;
     width: 500px;
     text-align: center;
     font-size: 14px;
+    margin-right: -250px;
 }
 #otherPages a{
     text-decoration: none;
@@ -126,12 +129,13 @@ header{
     margin-left: -4px;
     
 }
-/* ========== TYP HIERONDER JOUW CODE ========== */
+/* ========== Einde Header ========== */
+
+/* ========== BREAKLINE ========== */
 
 
 
-
-/* ========== TYP HIERBOVEN JOUW CODE ========== */
+/* ========== BREAKLINE ========== */
 
 /* ========== Footer ========== */
 footer{
@@ -139,8 +143,8 @@ footer{
     height: 230px;
     max-height: 230px;
     background-color: #282c2f;
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
 }
 footer div{
     max-height: 225px;
@@ -209,3 +213,4 @@ footer div{
     margin-top: 40px;
     
 }
+/* ========== Einde Footer ========== */
