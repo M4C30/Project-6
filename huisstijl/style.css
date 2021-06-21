@@ -1,7 +1,7 @@
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* ========== Standard ========== */
 *{
@@ -9,6 +9,8 @@
 }
 body{
     margin: auto;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 /* ========== Header ========== */
 
@@ -106,10 +108,11 @@ header{
     float: right;
     margin-top: 5px;
     display: grid;
-    grid-template-columns: 120px 80px 120px;
+    grid-template-columns: 80px 120px;
     width: 500px;
     text-align: center;
     font-size: 14px;
+    margin-right: -250px;
 }
 #otherPages a{
     text-decoration: none;
@@ -126,31 +129,61 @@ header{
     margin-left: -4px;
     
 }
-/* ========== TYP HIERONDER JOUW CODE ========== */
+/* ========== Einde Header ========== */
+
+/* ========== BREAKLINE ========== */
 
 
 
-
-/* ========== TYP HIERBOVEN JOUW CODE ========== */
+/* ========== BREAKLINE ========== */
 
 /* ========== Footer ========== */
 footer{
     width: 100%;
-    height: 250px;
+    height: 230px;
+    max-height: 230px;
     background-color: #282c2f;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
 }
-#footerContent{
-    margin-left: 20px;
+footer div{
+    max-height: 225px;
 }
-#footerTitle{
+#footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 250px;   
+}
+
+.footerH2{
     color: white;
-    font-size: x-large;
+    font-size: 19px;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-left: 5px solid #48748f;
+    padding-left: 5px;
 }
 .footerText{
+    margin-left: 5px;
     color: white;
     font-size: 14px;
+    width: 400px;
+    font-family: 'Work Sans', sans-serif;
+}
+.footerLinks{
+    text-decoration: none;
+    color: white;
+}
+.footerLinks:hover{
+    text-decoration: underline;
+}
+#footerUL li{
+    list-style: none;
+    margin: 8px;
+    text-align: left;
+    margin-left: -35px;
 }
 #sendConfirmation{
     height: 25px;
@@ -163,8 +196,23 @@ footer{
 #sendConfirmation:hover{
     background-color: #375f77;
 }
+
 #nieuwsbrief{
     border: none;
     text-decoration: none;
     outline: none;
+    margin-left: 5px;
+    padding: 5px;
 }
+#socialMedia{
+   display: grid;
+   grid-template-columns: 250px 300px;
+}
+
+#facebook iframe{
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    
+}
+/* ========== Einde Footer ========== */

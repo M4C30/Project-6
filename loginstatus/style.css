@@ -22,6 +22,7 @@ input{
     margin-left: auto;
     margin-right: auto;
     font-size: 16px;
+    padding-left: 5px;
 }
 
 #inlogKnop{
@@ -75,21 +76,36 @@ footer{
     width: 100%;
     background-color: rgb(230, 230, 230);
     height: 25px;
+    max-height: 25px;
     position: absolute;
     bottom: 0;
     left: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25px;
 }
-footer p{
-    font-size: 15px;
-    text-align: center;
+#footerLeft{
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-top: 2px;
 }
-footer a{
-    text-align: center;
-    font-size: 15px;
-    width: 100px;
-    margin-top: -20px;
-    
+#footerLeft a{
+    text-decoration: none;
+    color: rgb(170, 169, 169);
+}
+#footerLeft a:hover{
+    text-decoration: underline;
+}
+#footerRight{
+    text-align: right;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: -13px;
+    margin-right: 5px;
+}
+#footerRight p{
+    color: rgb(170, 169, 169);
 }
