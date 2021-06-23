@@ -1,7 +1,7 @@
 let titleWriter = 0;
 let sloganWriter = 0;
-let titleString = "PlanCo";
-let sloganString = "Plan. Coordinate. Cooperate.";
+let titleString = "PlanCo.";
+let sloganString = "Plan. Cooperate. Coordinate. ";
 let speed = 200;
 
 
