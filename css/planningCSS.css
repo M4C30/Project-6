@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* ========== TYP HIERONDER JOUW CODE ========== */
+footer{
+  margin-bottom: -300px;
+}
 *{font-family: 'Libre Franklin', sans-serif;}
 
   button {
@@ -67,16 +70,18 @@
   }
   
   .day + #currentDay {
-    background-color:#e8f4fa;
+    background-color:#b8cfe7;
   }
   .event {
-    font-size: 10px;
-    padding: 3px;
+    font-size: 11px;
+    padding: 8px;
     background-color: gray;
     color: white;
     border-radius: 5px;
+    min-height: 25px;
     max-height: 55px;
     overflow: hidden;
+    
   }
   .padding {
     cursor: default !important;
@@ -90,13 +95,34 @@
     background-color: white;
     box-shadow: 0px 0px 3px black;
     border-radius: 5px;
-    width: 350px;
+    width: 450px;
+    height: 430px;
     top: 100px;
-    left: calc(50% - 175px);
+    left: calc(48% - 160px);
     position: absolute;
     font-family: 'Libre Franklin', sans-serif;
   }
   #eventTitleInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventBesInput {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+  #eventDeelInput {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -116,7 +142,7 @@
     background-color: #3f4346;
   }
   #eventText {
-    font-size: 14px;
+    
   }
   #modalBackDrop {
     display: none;
@@ -127,4 +153,14 @@
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
+  }
+
+  #t1{
+    font-weight: bold;
+  }
+  #t2{
+    font-weight: bold;
+  }
+  #t3{
+    font-weight: bold;
   }

@@ -7,7 +7,10 @@ const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
+const eventBesInput = document.getElementById('eventBesInput');
+const eventDeelInput = document.getElementById('eventDeelInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
 
 function openModal(date) {
   clicked = date;
@@ -15,7 +18,10 @@ function openModal(date) {
   const eventForDay = events.find(e => e.date === clicked);
 
   if (eventForDay) {
-    document.getElementById('eventText').innerText = eventForDay.title;
+    document.getElementById('eventText').innerText = eventForDay.titel;
+    document.getElementById('eventText2').innerText = eventForDay.beschrijving;  
+    document.getElementById('eventText3').innerText = eventForDay.Deelnemers ;
+
     deleteEventModal.style.display = 'block';
   } else {
     newEventModal.style.display = 'block';
@@ -47,7 +53,7 @@ function load() {
   const paddingDays = weekdays.indexOf(dateString.split(', ')[0]);
 
   document.getElementById('monthDisplay').innerText = 
-    `${dt.toLocaleDateString('en-GB', { month: 'long' })} ${year}`;
+    `${dt.toLocaleDateString('nl-NL', { month: 'long' })} ${year}`;
 
   calendar.innerHTML = '';
 
@@ -68,7 +74,7 @@ function load() {
       if (eventForDay) {
         const eventDiv = document.createElement('div');
         eventDiv.classList.add('event');
-        eventDiv.innerText = eventForDay.title;
+        eventDiv.innerText = eventForDay.titel;
         daySquare.appendChild(eventDiv);
       }
 
@@ -83,27 +89,39 @@ function load() {
 
 function closeModal() {
   eventTitleInput.classList.remove('error');
+  eventBesInput.classList.remove('error');
+  eventDeelInput.classList.remove('error');
   newEventModal.style.display = 'none';
   deleteEventModal.style.display = 'none';
   backDrop.style.display = 'none';
   eventTitleInput.value = '';
+  eventBesInput.value = '';
+  eventDeelInput.value = '';
   clicked = null;
   load();
 }
 
 function saveEvent() {
-  if (eventTitleInput.value) {
+  if (eventTitleInput.value && eventBesInput.value && eventDeelInput.value) {
+   
+   
     eventTitleInput.classList.remove('error');
+    eventBesInput.classList.remove('error');
+    eventDeelInput.classList.remove('error');
 
     events.push({
-      date: clicked,
-      title: eventTitleInput.value,
+      date: clicked,  
+      titel: eventTitleInput.value,
+      beschrijving:eventBesInput.value,
+      Deelnemers:eventDeelInput.value,
     });
 
     localStorage.setItem('events', JSON.stringify(events));
     closeModal();
   } else {
     eventTitleInput.classList.add('error');
+    eventBesInput.classList.add('error');
+    eventDeelInput.classList.add('error');
   }
 }
 

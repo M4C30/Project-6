@@ -149,7 +149,7 @@ footer{
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    margin-bottom: -1000px;
+    
 }
 footer div{
     max-height: 225px;
