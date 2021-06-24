@@ -81,22 +81,22 @@ header{
 
 
 #status{
-    margin-left: 80px;
-    float: right;
-    height: 35px;
-    margin-top: -4px;
-    width: 100px;
-    border: 2px solid #5F6366;
-    border-radius: 2px;
-    background-color: #282C2F;
-    color: white;
-    cursor: pointer;
-    transition: 0.1s;
-    font-size: 15px;
+    margin-left: 80px!important;
+    float: right!important;
+    height: 35px!important;
+    margin-top: -4px!important;
+    width: 100px!important;
+    border: 2px solid #5F6366!important;
+    border-radius: 2px!important;
+    background-color: #282C2F!important;
+    color: white!important;
+    cursor: pointer!important;
+    transition: 0.1s!important;
+    font-size: 15px!important;
 }
 #status:hover{
-    background-color: #363b3f;
-    transition: 0.1s;
+    background-color: #363b3f!important;
+    transition: 0.1s!important;
 }
 
 #streepje{

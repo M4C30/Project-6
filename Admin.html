@@ -19,13 +19,17 @@
   </script>
 </head>
 <body>
-   
+
+  <div id="header"></div>
 
 
-    <form action="php/nieuwsBriefUitzend.php" method="POST">
-        <textarea type="text" name="nieuws" placeholder="Nieuwsbericht"></textarea>
+    <form action="php/nieuwsBriefUitzend.php" method="POST" id="nieuwsForm">
+        <textarea id="newsTextA" type="text" name="nieuws" placeholder="Nieuwsbericht"></textarea>
         <input type="submit" name="uitzend" value="Verzenden" id="sendConfirmation">
     </form>
+
+
+
     <div id="footer"></div>
 
 </body>
