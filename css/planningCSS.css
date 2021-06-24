@@ -29,10 +29,10 @@
     background-color:#3f4346;
   }
   #container {
-          position: absolute;
-    top: 20%;
-    left: 35%;
-    width: 770px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 950px;
   }
   #weekdays {
     width: 100%;
@@ -40,7 +40,7 @@
     color: gray;
   }
   #weekdays div {
-    width: 100px;
+    width: 130px;
     padding: 10px;
   }
   #calendar {
@@ -50,9 +50,9 @@
     flex-wrap: wrap;
   }
   .day {
-    width: 100px;
+    width: 125px;
     padding: 10px;
-    height: 100px;
+    height: 125px;
     cursor: pointer;
     box-sizing: border-box;
     background-color: whitesmoke;
