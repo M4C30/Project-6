@@ -1,3 +1,5 @@
+// Kalender Code
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -150,3 +152,7 @@ function initButtons() {
 
 initButtons();
 load();
+
+
+// Create Code
+
