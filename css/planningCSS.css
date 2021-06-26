@@ -107,6 +107,7 @@ footer{
   
   .day + #currentDay {
     background-color:#b8cfe7;
+    border: 2px solid whitesmoke;
   }
   .event {
     font-size: 11px;
@@ -200,3 +201,19 @@ footer{
   #t3{
     font-weight: bold;
   }
+
+  /* ===== Create ===== */
+
+.createLook{
+  width: 290px;
+  height: 80px;
+  border: 1px solid black;
+  background-color: red;
+  margin: auto;
+  margin-top: 10px;
+  cursor: move;
+}
+#createdDiv{
+  max-height: 700px;
+  overflow: auto;
+}

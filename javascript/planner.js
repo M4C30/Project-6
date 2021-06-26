@@ -1,4 +1,4 @@
-// Kalender Code
+// 'Kalender' Code
 
 let nav = 0;
 let clicked = null;
@@ -154,5 +154,24 @@ initButtons();
 load();
 
 
-// Create Code
+// 'Create' Code
 
+
+let divMaken = document.getElementById('create');
+
+divMaken.addEventListener('click', divAppear);
+
+function divAppear(){
+  let createdDiv = document.getElementById('createdDiv');
+  let creation = document.createElement('div');
+
+  for (let i = 0; i < 1; i++) {
+    
+    createdDiv.appendChild(creation);
+    creation.className = 'createLook';
+    creation.draggable = 'true';
+  }
+
+
+ 
+}
