@@ -20,7 +20,7 @@
        }
 
        
-       $results = $conn->query("SELECT email FROM brief WHERE ID BETWEEN '1' AND '10000'");
+       $results = $conn->query("SELECT email FROM brief WHERE ID ");
        while($row = $results->fetchArray()){
         $to = $row["email"];
         mail($to,"PlanCo maandelijkse nieuwsbrief",$bericht,$headers);
