@@ -25,7 +25,7 @@ footer{
   #create{
     height: 100px;
     width: 300px;
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     margin-top: -20px;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
@@ -203,18 +203,26 @@ footer{
   }
 
   /* ===== Create ===== */
-  #create{
-    height: 100px;
-    width: 300px;
-    background-color: #e9e7e7;
-    margin-top: -20px;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-    cursor: pointer;
-    border-bottom: 0.5px solid black;
-    transition: 0.1s;
-  }
-  #create:hover{
-    background-color: #f0f0ff;
-    transition: 0.1s;
-  }
+
+.createLook{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: #F5F5F5;
+  color: black;
+  border-radius: 5px;
+  min-height: 25px;
+  max-height: 55px;
+  overflow: hidden;
+  margin-bottom: 1%;
+  padding-left: 20px;
+  cursor: move;
+}
+.createLook:hover{
+  border: 1px dashed black;
+  transition: 0.1s;
+}
+#createdDiv{
+  max-height: 700px;
+  overflow: auto;
+}
