@@ -189,25 +189,25 @@ function initButtons() {
 
 
 
-divMaken.addEventListener('click', divAppear);
+//divMaken.addEventListener('click', divAppear);
 
-function divAppear(){
+//function divAppear(){
 
-  for (let i = 0; i < 1; i++) {
+  //for (let i = 0; i < 1; i++) {
     
-    createdDiv.appendChild(creation);
-    creation.className = 'createLook';
-    creation.draggable = 'true';
-    creation.innerText = eventForDay.titel;
-}
+   // createdDiv.appendChild(creation);
+   // creation.className = 'createLook';
+   // creation.draggable = 'true';
+    //creation.innerText = eventForDay.titel;
+//}
 
 
  
-}
+//}
 
 
-console.log(localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []);
-console.log(localStorage.getItem('events2') ? JSON.parse(localStorage.getItem('events2')) : []);
+//console.log(localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []);
+//console.log(localStorage.getItem('events2') ? JSON.parse(localStorage.getItem('events2')) : []);
 
 initButtons();
 load();
