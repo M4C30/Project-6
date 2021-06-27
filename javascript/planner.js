@@ -28,8 +28,8 @@ function openModal(date) {
 
   if (eventForDay) {
     document.getElementById('eventText').innerText = eventForDay.titel;
-    document.getElementById('eventText2').innerText = eventForDay.beschrijving;
-    document.getElementById('eventText3').innerText = eventForDay.Deelnemers;
+    document.getElementById('eventText2').innerText = eventForDay.beschrijving;  
+    document.getElementById('eventText3').innerText = eventForDay.Deelnemers ;
 
     deleteEventModal.style.display = 'block';
   } else {
@@ -52,7 +52,7 @@ function load() {
 
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-
+  
   const dateString = firstDayOfMonth.toLocaleDateString('en-GB', {
     weekday: 'long',
     year: 'numeric',
@@ -61,12 +61,12 @@ function load() {
   });
   const paddingDays = weekdays.indexOf(dateString.split(', ')[0]);
 
-  document.getElementById('monthDisplay').innerText =
+  document.getElementById('monthDisplay').innerText = 
     `${dt.toLocaleDateString('nl-NL', { month: 'long' })} ${year}`;
 
   calendar.innerHTML = '';
 
-  for (let i = 1; i <= paddingDays + daysInMonth; i++) {
+  for(let i = 1; i <= paddingDays + daysInMonth; i++) {
     const daySquare = document.createElement('div');
     daySquare.classList.add('day');
 
@@ -85,27 +85,27 @@ function load() {
         eventDiv.classList.add('event');
         eventDiv.innerText = eventForDay.titel;
         daySquare.appendChild(eventDiv);
+        
 
-
-
+        
 
         for (let i = 0; i <= 0; i++) {
           const creation = document.createElement('div');
-          creation.classList.add('createLook');
+          creation.classList.add ('createLook');
           creation.innerText = eventForDay.titel;
           creation.draggable = 'true';
           createdDiv.appendChild(creation);
         }
-
+        
       }
 
-      daySquare.addEventListener('click', () => openModal(dayString));
+      daySquare.addEventListener('click', () => openModal(dayString) );
     } else {
       daySquare.classList.add('padding');
     }
 
-    calendar.appendChild(daySquare);
-
+    calendar.appendChild(daySquare);    
+    
   }
 }
 
@@ -127,20 +127,20 @@ function closeModal() {
 
 function saveEvent() {
   if (eventTitleInput.value && eventBesInput.value && eventDeelInput.value) {
-
-
+   
+   
     eventTitleInput.classList.remove('error');
     eventBesInput.classList.remove('error');
     eventDeelInput.classList.remove('error');
 
     events.push({
-      date: clicked,
+      date: clicked,  
       titel: eventTitleInput.value,
     });
     events2.push({
-      date: clicked,
-      beschrijving: eventBesInput.value,
-      Deelnemers: eventDeelInput.value,
+      date: clicked,  
+      beschrijving:eventBesInput.value,
+      Deelnemers:eventDeelInput.value,
     });
 
     localStorage.setItem('events', JSON.stringify(events));
@@ -171,10 +171,10 @@ function initButtons() {
   document.getElementById('backButton').addEventListener('click', () => {
     nav--;
     load();
-
-
+    
+    
   });
-
+  
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
@@ -187,7 +187,7 @@ function initButtons() {
 
 // 'Create' Code
 
-let divMaken = document.getElementById('create');
+
 
 //divMaken.addEventListener('click', divAppear);
 
