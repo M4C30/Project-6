@@ -3,7 +3,7 @@
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
-let events2 = localStorage.getItem('events2') ? JSON.parse(localStorage.getItem('events2')) : [];
+
 
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
@@ -15,9 +15,6 @@ const eventDeelInput = document.getElementById('eventDeelInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const divMaken = document.getElementById('create');
 const createdDiv = document.getElementById('createdDiv');
-
-
-
 
 
 
@@ -136,15 +133,13 @@ function saveEvent() {
     events.push({
       date: clicked,  
       titel: eventTitleInput.value,
-    });
-    events2.push({
-      date: clicked,  
       beschrijving:eventBesInput.value,
       Deelnemers:eventDeelInput.value,
     });
 
+
     localStorage.setItem('events', JSON.stringify(events));
-    localStorage.setItem('events2', JSON.stringify(events2));
+   
     closeModal();
   } else {
     eventTitleInput.classList.add('error');
@@ -155,9 +150,8 @@ function saveEvent() {
 
 function deleteEvent() {
   events = events.filter(e => e.date !== clicked);
-  events2 = events2.filter(e => e.date !== clicked);
   localStorage.setItem('events', JSON.stringify(events));
-  localStorage.setItem('events2', JSON.stringify(events2));
+
   closeModal();
 }
 
