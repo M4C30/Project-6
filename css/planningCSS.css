@@ -180,9 +180,7 @@ footer{
   #saveButton, #closeButton {
     background-color: #3f4346;
   }
-  #eventText {
-    
-  }
+
   #modalBackDrop {
     display: none;
     top: 0px;
