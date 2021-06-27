@@ -3,6 +3,7 @@
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
+let events2 = localStorage.getItem('events2') ? JSON.parse(localStorage.getItem('events2')) : [];
 
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
@@ -12,6 +13,12 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const eventBesInput = document.getElementById('eventBesInput');
 const eventDeelInput = document.getElementById('eventDeelInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const divMaken = document.getElementById('create');
+const createdDiv = document.getElementById('createdDiv');
+
+
+
+
 
 
 function openModal(date) {
@@ -78,14 +85,27 @@ function load() {
         eventDiv.classList.add('event');
         eventDiv.innerText = eventForDay.titel;
         daySquare.appendChild(eventDiv);
+        
+
+        
+
+        for (let i = 0; i <= 0; i++) {
+          const creation = document.createElement('div');
+          creation.classList.add ('createLook');
+          creation.innerText = eventForDay.titel;
+          creation.draggable = 'true';
+          createdDiv.appendChild(creation);
+        }
+        
       }
 
-      daySquare.addEventListener('click', () => openModal(dayString));
+      daySquare.addEventListener('click', () => openModal(dayString) );
     } else {
       daySquare.classList.add('padding');
     }
 
     calendar.appendChild(daySquare);    
+    
   }
 }
 
@@ -101,6 +121,8 @@ function closeModal() {
   eventDeelInput.value = '';
   clicked = null;
   load();
+  location.reload();
+  return false;
 }
 
 function saveEvent() {
@@ -114,11 +136,15 @@ function saveEvent() {
     events.push({
       date: clicked,  
       titel: eventTitleInput.value,
+    });
+    events2.push({
+      date: clicked,  
       beschrijving:eventBesInput.value,
       Deelnemers:eventDeelInput.value,
     });
 
     localStorage.setItem('events', JSON.stringify(events));
+    localStorage.setItem('events2', JSON.stringify(events2));
     closeModal();
   } else {
     eventTitleInput.classList.add('error');
@@ -129,7 +155,9 @@ function saveEvent() {
 
 function deleteEvent() {
   events = events.filter(e => e.date !== clicked);
+  events2 = events2.filter(e => e.date !== clicked);
   localStorage.setItem('events', JSON.stringify(events));
+  localStorage.setItem('events2', JSON.stringify(events2));
   closeModal();
 }
 
@@ -137,41 +165,47 @@ function initButtons() {
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
     load();
+
   });
 
   document.getElementById('backButton').addEventListener('click', () => {
     nav--;
     load();
+    
+    
   });
-
+  //divMaken.addEventListener('click', divAppear);
   document.getElementById('saveButton').addEventListener('click', saveEvent);
   document.getElementById('cancelButton').addEventListener('click', closeModal);
   document.getElementById('deleteButton').addEventListener('click', deleteEvent);
   document.getElementById('closeButton').addEventListener('click', closeModal);
 }
 
-initButtons();
-load();
 
 
 // 'Create' Code
 
 
-let divMaken = document.getElementById('create');
 
-divMaken.addEventListener('click', divAppear);
 
-function divAppear(){
-  let createdDiv = document.getElementById('createdDiv');
-  let creation = document.createElement('div');
 
-  for (let i = 0; i < 1; i++) {
+//function divAppear(){
+
+ // for (let i = 0; i < 1; i++) {
     
-    createdDiv.appendChild(creation);
-    creation.className = 'createLook';
-    creation.draggable = 'true';
-  }
+    //createdDiv.appendChild(creation);
+    //creation.className = 'createLook';
+    //creation.draggable = 'true';
+    //creation.innerText = eventForDay.titel;
+  //}//
 
 
  
-}
+//}
+
+
+console.log(localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []);
+console.log(localStorage.getItem('events2') ? JSON.parse(localStorage.getItem('events2')) : []);
+
+initButtons();
+load();

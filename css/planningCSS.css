@@ -19,6 +19,7 @@ footer{
     position: absolute;
     top: 15%;
     left: 5%;
+    margin: 1px;
   }
 
   #create{
@@ -31,6 +32,7 @@ footer{
     cursor: pointer;
     border-bottom: 0.5px solid black;
     transition: 0.1s;
+    margin-bottom: 1%;
   }
   #create:hover{
     background-color: #f0f0ff;
@@ -205,13 +207,17 @@ footer{
   /* ===== Create ===== */
 
 .createLook{
-  width: 290px;
-  height: 80px;
-  border: 1px solid black;
-  background-color: red;
-  margin: auto;
-  margin-top: 10px;
-  cursor: move;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  min-height: 25px;
+  max-height: 55px;
+  overflow: hidden;
+  margin-bottom: 1%;
+  text-align: center;
 }
 #createdDiv{
   max-height: 700px;
