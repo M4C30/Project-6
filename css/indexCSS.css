@@ -6,6 +6,9 @@
 body{
     height: 1000px;
 }
+footer{
+    margin-bottom: -3000px;
+}
 #start{
     margin-top: 100px;
     height: 600px;
@@ -46,4 +49,18 @@ body{
 }
 #registreer{
     margin-left: 10px;
+}
+
+#promotie{
+    width: 80%;
+    height: 600px;
+    border: 1px solid black;
+    margin: auto;
+}
+#slides{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
 }
