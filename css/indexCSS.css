@@ -2,13 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
 /* ========== TYP HIERONDER JOUW CODE ========== */
 
+
 #welkom{
-    height: 500px;
+    height: 800px;
+    width: 100%;
+    height: 600px;
     width: 98%;
     margin: auto;
-    margin-top: 40px;
-    border: 1px solid black;
+}
+#welkomTitel{
+    margin-top: 38px;
+    margin-left: 150px;
+    font-size: 50px;
+    color: black;
+}
+#sloganTitel{
+    margin-top: -40px;
+    width: 250px;
+    margin-left: 152px;
+    margin-bottom: 50px;
+    color: black;
+}
+#welkomBeschrijving{
+    margin-left: 150px;
+    width: 700px;
+    font-family: 'Libre Franklin', 'monospace';
+    white-space: pre-line;
+    color: rgb(100, 100, 100);
+    user-select: none;
 }

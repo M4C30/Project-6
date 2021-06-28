@@ -9,8 +9,9 @@
 }
 body{
     margin: auto;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-y: scroll;
+
 }
 /* ========== Header ========== */
 
@@ -19,18 +20,19 @@ header{
     margin: auto;
     height: 70px;
     background-color: #282c2f;
+    
 }
 
 #header{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
-#title h2{
-    color: #e9eaec;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-left: 20px;
-    text-decoration: underline;
+#logoHeader{
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 .ayo{
@@ -79,22 +81,22 @@ header{
 
 
 #status{
-    margin-left: 100px;
-    float: right;
-    height: 35px;
-    margin-top: -4px;
-    width: 100px;
-    border: 2px solid #5F6366;
-    border-radius: 2px;
-    background-color: #282C2F;
-    color: white;
-    cursor: pointer;
-    transition: 0.1s;
-    font-size: 15px;
+    margin-left: 80px!important;
+    float: right!important;
+    height: 35px!important;
+    margin-top: -4px!important;
+    width: 100px!important;
+    border: 2px solid #5F6366!important;
+    border-radius: 2px!important;
+    background-color: #282C2F!important;
+    color: white!important;
+    cursor: pointer!important;
+    transition: 0.1s!important;
+    font-size: 15px!important;
 }
 #status:hover{
-    background-color: #363b3f;
-    transition: 0.1s;
+    background-color: #363b3f!important;
+    transition: 0.1s!important;
 }
 
 #streepje{
@@ -112,7 +114,7 @@ header{
     width: 500px;
     text-align: center;
     font-size: 14px;
-    margin-right: -250px;
+    margin-right: -200px;
 }
 #otherPages a{
     text-decoration: none;
@@ -147,6 +149,7 @@ footer{
     flex-direction: column;
     position: absolute;
     bottom: 0;
+    
 }
 footer div{
     max-height: 225px;

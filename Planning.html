@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Planner</title>
   <link rel="stylesheet" href="huisstijl/style.css">
   <link rel="stylesheet" href="css/planningCSS.css">
   <script src="huisstijl/js.js"></script>
@@ -22,6 +22,67 @@
 <body>
   <div id="header"></div>
 
+<div id="createDiv">
+  <div id="create">
+    <!--<h2>Cre&euml;er</h2>!-->
+    <h2>Actieve Events</h2>
+  </div>
+  <div id="createdDiv">
+
+  </div>
+</div>
+
+
+
+  <div id="container">
+    <div id="header1">
+      <div id="monthDisplay"></div>
+      <div>
+        <button id="backButton">Terug</button>
+        <button id="nextButton">Verder</button>
+      </div>
+    </div>
+
+    <div id="weekdays">
+      <div>Zondag</div>
+      <div>Maandag</div>
+      <div>Dinsdag</div>
+      <div>Woensdag</div>
+      <div>Donderdag</div>
+      <div>Vrijdag</div>
+      <div>Zaterdag</div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="newEventModal">
+    <h2>Nieuw Evenement</h2>
+
+    <input id="eventTitleInput" placeholder="Evenement Title" />
+    <input id="eventBesInput" placeholder="Evenement Beschrijving"/>
+    <input id="eventDeelInput" placeholder="Evenement Deelnemers bijv : Maceo, Rekan, Diego etc "/>
+
+    <button id="saveButton">Opslaan</button>
+    <button id="cancelButton">Terug</button>
+  </div>
+
+  <div id="deleteEventModal">
+    <h2>Evenement</h2>
+
+    <p id="t1">Titel evenement : </p>
+    <p id="eventText"></p></br>
+    <p id="t2">Beschrijving evenement : </p>
+    <p id="eventText2"></p></br>
+    <p id="t3">Deelnemers evenement : </p>
+    <p id="eventText3"></p></br>
+
+
+    <button id="deleteButton">Verwijder</button>
+    <button id="closeButton">Sluiten</button>
+  </div>
+
+  <div id="modalBackDrop"></div>
 
 
 
@@ -31,13 +92,8 @@
 
 
 
-
-
-
-
-
-
-  <div id="footer"></div>
+<div id="footer"></div>
+<script src="javascript/planner.js"></script>
 </body>
 
 </html>
