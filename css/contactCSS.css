@@ -4,3 +4,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 /* ========== TYP HIERONDER JOUW CODE ========== */
+.container-fluid{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.container-fluid h2{
+    color: black;
+    position: relative;
+    width: 23rem;
+}
+
+.container-fluid h2::after{
+position: absolute;
+content:"";
+bottom: 0;
+right: 63px;
+width: 67px;
+height: 2px;
+background-color: black;
+}
+
+.accordion{
+  width: 100%;
+  padding:0 5px;
+  border: 2px solid #6db5ff;  
+  cursor: pointer;
+  border-radius: 50px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon{
+margin: 0 10px 0 0;
+width: 30px;
+height: 30px;
+background: url(/Images/VectorPlus.jpg) no-repeat 8px 7px;
+border-radius: 50%;
+float: left;
+transition: all .5s ease-in;
+}
+footer{
+    margin-bottom: -1000px;
+}
+#h1{
+    margin-left: 30px;
+}
+
+#h3{
+    margin-left: 30px;
+
+}
