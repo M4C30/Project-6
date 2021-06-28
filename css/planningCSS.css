@@ -208,14 +208,19 @@ footer{
   font-size: 15px;
   font-weight: bold;
   padding: 8px;
-  background-color: gray;
-  color: white;
+  background-color: #F5F5F5;
+  color: black;
   border-radius: 5px;
   min-height: 25px;
   max-height: 55px;
   overflow: hidden;
   margin-bottom: 1%;
-  text-align: center;
+  padding-left: 20px;
+  cursor: move;
+}
+.createLook:hover{
+  border: 1px dashed black;
+  transition: 0.1s;
 }
 #createdDiv{
   max-height: 700px;

@@ -6,35 +6,50 @@
 /* ========== TYP HIERONDER JOUW CODE ========== */
 #intro{
     margin-left: 5px;
+    margin-bottom: 200px;
 }
 #foto1{
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
-    margin-left: 20px;
+    height: 450px;
+    width: 450px;
+    background-image: url("../266px-Flag_of_Portugal.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%
 }
 #foto2{
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
-    margin-left: 20px;
+    height: 450px;
+    width: 450px;
 }
 #foto3{
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
+    height: 450px;
+    width: 450px;
     float: right;
-    margin-top: -604px;
-    margin-right: 20px;
 }
 #foto4{
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
+    height: 450px;
+    width: 450px;
     float: right;
-    margin-top: -304px;
-    margin-right: 20px;
 }
 footer{
-    margin-top: 500px;
+    margin-bottom: -1700px;
+}
+#fottos{
+display: grid;
+grid-template-rows: 500px 500px 500px 500px;
+}
+#fotto1{
+    display: grid;
+    grid-template-columns: 25% 75% ;
+}
+#fotto2{
+    display: grid;
+    grid-template-columns: 75% 25% ;
+}
+#fotto3{
+    display: grid;
+    grid-template-columns: 25% 75% ;
+}
+#fotto4{
+    display: grid;
+    grid-template-columns: 75% 25% ;
 }
