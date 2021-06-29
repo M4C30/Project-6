@@ -52,10 +52,12 @@ footer{
 }
 
 #promotie{
+    position: absolute;
+    top: 80%;
     width: 80%;
     height: 600px;
     border: 1px solid black;
-    margin: auto;
+    left: 10%;
 }
 #slides{
     height: 100%;
