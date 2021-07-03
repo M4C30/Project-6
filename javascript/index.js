@@ -15,8 +15,6 @@ function typeTitle() {
   
 }
 
-
-
 function typeSlogan(){
     if (sloganWriter < sloganString.length) {
         document.getElementById("sloganTitel").innerHTML += sloganString.charAt(sloganWriter);
@@ -26,6 +24,41 @@ function typeSlogan(){
       }
 }
 
-setTimeout(typeSlogan(),3000);
+let slides = document.getElementById('slides');
+let mainSlideText = document.getElementById('mainSlideText');
 
+// Check position
+let screen = document.getElementById('screen');
+if (screen.)
+let position = slides.getBoundingClientRect();
+alert("Links: " + position.left);
+alert("Top: " + position.top);
+
+// Slides
+
+
+slides.addEventListener("animationend",fadeInScreen);
+mainSlideText.addEventListener("animationend",stayOnScreen);
+
+function fadeInScreen(){
+  mainSlideText.style.animation = 'fadein 2s';
+}
+function stayOnScreen(){
+  mainSlideText.style.opacity = '1';
+}
+setInterval(nextSlide, 5000);
+
+function nextSlide(){
+
+}
+
+
+
+
+
+
+
+
+
+setTimeout(typeSlogan(),3000);
 typeTitle();
