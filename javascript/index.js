@@ -24,18 +24,13 @@ function typeSlogan(){
       }
 }
 
-let slides = document.getElementById('slides');
-let mainSlideText = document.getElementById('mainSlideText');
 
-// Check position
-let screen = document.getElementById('screen');
-if (screen.)
-let position = slides.getBoundingClientRect();
-alert("Links: " + position.left);
-alert("Top: " + position.top);
+
+
 
 // Slides
-
+let slides = document.getElementById('slides');
+let mainSlideText = document.getElementById('mainSlideText');
 
 slides.addEventListener("animationend",fadeInScreen);
 mainSlideText.addEventListener("animationend",stayOnScreen);
@@ -55,9 +50,17 @@ function nextSlide(){
 
 
 
+// Check position
+let screen = document.getElementById('screen');
+let position = slides.getBoundingClientRect();
+
+console.log("Links: " + position.left);
+console.log("Top: " + position.top);
+
+if (document.getElementById('screen').top = 444){
 
 
-
+}
 
 
 setTimeout(typeSlogan(),3000);
