@@ -9,19 +9,19 @@ function typeTitle() {
   if (titleWriter < titleString.length) {
     document.getElementById("welkomTitel").innerHTML += titleString.charAt(titleWriter);
     titleWriter++;
-    
+
     setTimeout(typeTitle, 50);
   }
-  
+
 }
 
-function typeSlogan(){
-    if (sloganWriter < sloganString.length) {
-        document.getElementById("sloganTitel").innerHTML += sloganString.charAt(sloganWriter);
-        sloganWriter++;
-        
-        setTimeout(typeSlogan, 8);
-      }
+function typeSlogan() {
+  if (sloganWriter < sloganString.length) {
+    document.getElementById("sloganTitel").innerHTML += sloganString.charAt(sloganWriter);
+    sloganWriter++;
+
+    setTimeout(typeSlogan, 8);
+  }
 }
 
 
@@ -32,36 +32,33 @@ function typeSlogan(){
 let slides = document.getElementById('slides');
 let mainSlideText = document.getElementById('mainSlideText');
 
-slides.addEventListener("animationend",fadeInScreen);
-mainSlideText.addEventListener("animationend",stayOnScreen);
+slides.addEventListener("animationend", fadeInScreen);
+mainSlideText.addEventListener("animationend", stayOnScreen);
 
-function fadeInScreen(){
+function fadeInScreen() {
   mainSlideText.style.animation = 'fadein 2s';
 }
-function stayOnScreen(){
+function stayOnScreen() {
   mainSlideText.style.opacity = '1';
 }
-setInterval(nextSlide, 5000);
+//setInterval(nextSlide, 5000);
 
-function nextSlide(){
 
-}
 
 
 
 
 // Check position
 let screen = document.getElementById('screen');
-let position = slides.getBoundingClientRect();
 
-console.log("Links: " + position.left);
-console.log("Top: " + position.top);
-
-if (document.getElementById('screen').top = 444){
-
-
-}
+let slidePosition = slides.getBoundingClientRect();
+let screenPosition = screen.getBoundingClientRect();
+console.log("Slide Links: " + slidePosition.left);
+console.log("Slide Top: " + slidePosition.top);
 
 
-setTimeout(typeSlogan(),3000);
+
+screen.addEventListener("click", test) 
+setTimeout(typeSlogan(), 3000);
 typeTitle();
+
