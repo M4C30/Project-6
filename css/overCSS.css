@@ -11,7 +11,7 @@
 #foto1{
     height: 450px;
     width: 450px;
-    background-image: url("../266px-Flag_of_Portugal.svg.png");
+    background-image: url("../images/MACEO.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%
@@ -19,11 +19,20 @@
 #foto2{
     height: 450px;
     width: 450px;
+    background-image: url("../images/wolf.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
+
 #foto3{
     height: 450px;
     width: 450px;
     float: right;
+    background-image: url("../images/diego.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 #foto4{
     height: 450px;
