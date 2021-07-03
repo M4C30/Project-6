@@ -9,56 +9,56 @@ function typeTitle() {
   if (titleWriter < titleString.length) {
     document.getElementById("welkomTitel").innerHTML += titleString.charAt(titleWriter);
     titleWriter++;
-    
+
     setTimeout(typeTitle, 50);
   }
-  
+
 }
 
-function typeSlogan(){
-    if (sloganWriter < sloganString.length) {
-        document.getElementById("sloganTitel").innerHTML += sloganString.charAt(sloganWriter);
-        sloganWriter++;
-        
-        setTimeout(typeSlogan, 8);
-      }
+function typeSlogan() {
+  if (sloganWriter < sloganString.length) {
+    document.getElementById("sloganTitel").innerHTML += sloganString.charAt(sloganWriter);
+    sloganWriter++;
+
+    setTimeout(typeSlogan, 8);
+  }
 }
 
+
+
+
+
+// Slides
 let slides = document.getElementById('slides');
 let mainSlideText = document.getElementById('mainSlideText');
 
-// Check position
-let screen = document.getElementById('screen');
-if (screen.)
-let position = slides.getBoundingClientRect();
-alert("Links: " + position.left);
-alert("Top: " + position.top);
+slides.addEventListener("animationend", fadeInScreen);
+mainSlideText.addEventListener("animationend", stayOnScreen);
 
-// Slides
-
-
-slides.addEventListener("animationend",fadeInScreen);
-mainSlideText.addEventListener("animationend",stayOnScreen);
-
-function fadeInScreen(){
+function fadeInScreen() {
   mainSlideText.style.animation = 'fadein 2s';
 }
-function stayOnScreen(){
+function stayOnScreen() {
   mainSlideText.style.opacity = '1';
 }
-setInterval(nextSlide, 5000);
-
-function nextSlide(){
-
-}
+//setInterval(nextSlide, 5000);
 
 
 
 
 
 
+// Check position
+let screen = document.getElementById('screen');
+
+let slidePosition = slides.getBoundingClientRect();
+let screenPosition = screen.getBoundingClientRect();
+console.log("Slide Links: " + slidePosition.left);
+console.log("Slide Top: " + slidePosition.top);
 
 
 
-setTimeout(typeSlogan(),3000);
+
+setTimeout(typeSlogan(), 3000);
 typeTitle();
+
