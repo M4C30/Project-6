@@ -9,6 +9,16 @@ body{
 footer{
     margin-bottom: -3000px;
 }
+#screen{
+    position: absolute;
+    z-index: 100;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    left: 50%;
+    top: 80%;
+    position: fixed;
+}
 #start{
     margin-top: 100px;
     height: 600px;
@@ -53,16 +63,54 @@ footer{
 
 #promotie{
     position: absolute;
-    top: 80%;
+    top: 100%;
     width: 80%;
     height: 600px;
-    border: 1px solid black;
     left: 10%;
+    overflow: hidden;
+    border: 1px solid black;
 }
 #slides{
+    border: 1px solid black;
     height: 100%;
     width: 90%;
     margin: auto;
-    border: 1px solid black;
-    text-align: center;
+    text-align: left;
+    background-image: url('/images/gif3.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    animation: slidein 1s;
+}
+
+#mainSlideText{
+    font-weight: bold;
+    margin-top: 250px;
+    width: 615px;
+    font-size: 30px;
+    margin-left: 50px;
+    opacity: 0;
+}
+#slideP{
+    margin-top: 250px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/*======== Keyframe =======*/
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slidein{
+    from {
+        margin-top: -500px;
+    }
+    to {
+        margin-top: 0;
+    }
 }
