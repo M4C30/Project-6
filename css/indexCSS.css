@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ========== Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -10,73 +9,15 @@ body{
 footer{
     margin-bottom: -3000px;
 }
-#start{
-    margin-top: 100px;
-    height: 600px;
-    width: 97%;
-    margin: auto;
-    background-image: url('../images/office.jpg');
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
-    background-position-x: 500px;
-    overflow: hidden;
-}
-#welkomTitel{
-    font-size: 59px;
-}
-#sloganTitel{
-    margin-top: -20px;
-    font-size: 20px;
-    margin-left: 5px;
-}
-#welkomBeschrijving{
-    margin-top: 100px;
-    white-space: pre-line;
-    font-size: 20px;
-    color: black;
-}
-#startText{
-    margin-top: 100px;
-    margin-left: 10px;
-}
-#registreer a{
-    font-family: 'Libre Franklin', sans-serif;
-    text-decoration: none;
-    color: #10689e;
-}
-#registreer a:hover{
-    text-decoration: underline;
-}
-#registreer{
-    margin-left: 10px;
-}
-
-#promotie{
+#screen{
     position: absolute;
+    z-index: 100;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    left: 50%;
     top: 80%;
-    width: 80%;
-    height: 600px;
-    border: 1px solid black;
-    left: 10%;
-}
-#slides{
-    height: 100%;
-    width: 90%;
-    margin: auto;
-    border: 1px solid black;
-    text-align: center;
-=======
-/* ========== Fonts ========== */
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-/* ========== TYP HIERONDER JOUW CODE ========== */
-body{
-    height: 1000px;
-}
-footer{
-    margin-bottom: -3000px;
+    position: fixed;
 }
 #start{
     margin-top: 100px;
@@ -122,17 +63,54 @@ footer{
 
 #promotie{
     position: absolute;
-    top: 80%;
+    top: 100%;
     width: 80%;
     height: 600px;
-    border: 1px solid black;
     left: 10%;
+    overflow: hidden;
+    border: 1px solid black;
 }
 #slides{
+    border: 1px solid black;
     height: 100%;
     width: 90%;
     margin: auto;
-    border: 1px solid black;
-    text-align: center;
->>>>>>> c6a9a252ad75c315c8cde3d2f61963d3c02f714c
+    text-align: left;
+    background-image: url('/images/gif3.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    animation: slidein 1s;
+}
+
+#mainSlideText{
+    font-weight: bold;
+    margin-top: 250px;
+    width: 615px;
+    font-size: 30px;
+    margin-left: 50px;
+    opacity: 0;
+}
+#slideP{
+    margin-top: 250px;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/*======== Keyframe =======*/
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slidein{
+    from {
+        margin-top: -500px;
+    }
+    to {
+        margin-top: 0;
+    }
 }
