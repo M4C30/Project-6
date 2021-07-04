@@ -49,7 +49,7 @@ float: left;
 transition: all .5s ease-in;
 }
 
-.accordion h5{
+.accordion .SniperMonkey{
     font-size: 22px;
     margin: 0;
     padding: 3px 0 0 0;
@@ -71,6 +71,7 @@ transition: all .5s ease-in;
 footer{
     margin-bottom: -1000px;
 }
+
 #h1{
     margin-left: 30px;
 }
@@ -78,4 +79,8 @@ footer{
 #h3{
     margin-left: 30px;
 
+}
+
+.ctive .icon{
+    background: url();
 }
