@@ -28,12 +28,14 @@ background-color: black;
 }
 
 .accordion{
+    height: 75px;
   width: 100%;
   padding:0 5px;
   border: 2px solid #6db5ff;  
   cursor: pointer;
   border-radius: 50px;
   margin: 10px 0;
+  display: flex;
   align-items: center;
 }
 
@@ -41,14 +43,36 @@ background-color: black;
 margin: 0 10px 0 0;
 width: 30px;
 height: 30px;
-background: url(/Images/VectorPlus.jpg) no-repeat 8px 7px;
+background: url("/images/plus-icon-21715.png");
+background-size:100%;
 border-radius: 50%;
 float: left;
 transition: all .5s ease-in;
 }
+
+.accordion .SniperMonkey{
+    font-size: 22px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #1f5c9a;
+}
+
+.panel{
+    padding: 0 15px;
+    border-left: 1px solid #6db5ff;
+    margin-left: 25px;
+    font-size: 14px;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .5s ease-in;
+}
+
 footer{
     margin-bottom: -1000px;
 }
+
 #h1{
     margin-left: 30px;
 }
@@ -56,4 +80,9 @@ footer{
 #h3{
     margin-left: 30px;
 
+}
+
+.active1 .icon{
+    background: url("/images/Minus.png") no-repeat -4px -5px #fff;
+    background-size: 130%;
 }
