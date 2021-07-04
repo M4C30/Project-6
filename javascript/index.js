@@ -31,34 +31,99 @@ function typeSlogan() {
 // Slides
 let slides = document.getElementById('slides');
 let mainSlideText = document.getElementById('mainSlideText');
+let buttonDiv = document.getElementById("slideButtons");
+let slide1 = document.getElementById('slide1');
 
-slides.addEventListener("animationend", fadeInScreen);
-mainSlideText.addEventListener("animationend", stayOnScreen);
+// Knoppen voor slides
+let slideB1 = document.getElementById('slideB1');
+let slideB2 = document.getElementById('slideB2');
+let slideB3 = document.getElementById('slideB3');
 
-function fadeInScreen() {
+function keepSlide() {
+  // Keeps slide at given position after animation plays
+  slides.style.marginTop = '0px';
   mainSlideText.style.animation = 'fadein 2s';
 }
 function stayOnScreen() {
   mainSlideText.style.opacity = '1';
 }
-//setInterval(nextSlide, 5000);
+slides.addEventListener("animationend", keepSlide);
+mainSlideText.addEventListener("animationend", stayOnScreen);
+
+
+let tel = 0;
+
+setInterval(function(){
+  tel++;
+  currentSlide(tel);
+  if (tel > 3){
+    tel = 0;
+  }
+  
+},6000);
+
+function currentSlide(now){
+    if (now == 1){
+      slide1.style.backgroundImage = "url('/images/gif3.gif')";
+      slideB2.className = "far fa-circle";
+      slideB1.className = "fas fa-circle";
+      slideB3.className = "far fa-circle";
+      mainSlideText.innerHTML = "Gemakkelijk jouw planningen <br>ordenen op de gewenste dagen.";
+    }
+    if (now == 2){
+      slide1.style.backgroundImage = "url('/images/gif2.gif')";
+      slideB2.className = "fas fa-circle";
+      slideB3.className = "far fa-circle";
+      slideB1.className = "far fa-circle";
+      mainSlideText.innerHTML = "Meteen verder kunnen met de <br>opgegeven opdracht.";
+    }
+    if (now == 3){
+      slide1.style.backgroundImage = "url('/images/gif1.gif')";
+      slideB3.className = "fas fa-circle";
+      slideB2.className = "far fa-circle";
+      slideB1.className = "far fa-circle";
+      mainSlideText.innerHTML = "Op elk moment zijn wij er voor jou,<br> zodat jouw problemen snel verholpen worden.";
+    }
+}
 
 
 
 
 
 
-// Check position
-let screen = document.getElementById('screen');
+// Check Positie
+var slidesHeight = slides.offsetHeight;
+var slidesWidth = slides.offsetWidth;
 
-let slidePosition = slides.getBoundingClientRect();
-let screenPosition = screen.getBoundingClientRect();
-console.log("Slide Links: " + slidePosition.left);
-console.log("Slide Top: " + slidePosition.top);
+function elementInViewport() {
+
+  var bounding = slides.getBoundingClientRect();
+
+  if (bounding.top >= -slidesHeight
+    && bounding.left >= -slidesWidth
+    && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + slidesWidth
+    && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + (slidesHeight - 50)) {
+
+    slides.style.visibility = 'visible';
+    slides.style.animation = 'slidein 1s';
+  }
+}
+
+document.addEventListener('scroll', elementInViewport);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 setTimeout(typeSlogan(), 3000);
 typeTitle();
-
