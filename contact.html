@@ -31,8 +31,9 @@
     Als u daarna meer vragen heeft en toch niet op een antwoord kan komen, <br>
     dan kunt u altijd nog contact opnemen met onze klantenservice.</h4>
 
+
   <div class="container-fluid">
-    <h2>Veelgestelde vragen (FAQs)</h2>
+    <h2 id="efSnel">Veelgestelde vragen (FAQs)</h2>
     <div class="accordion">
       <div class="icon"></div>
       <p class="SniperMonkey">vraag1</p>
@@ -67,14 +68,43 @@
       </div>
   </div>
 
-  <p class="p">
-    Heeft u een probleem en zoekt u naar een oplossing? Neem dan een kijkje in onze FAQ!
 
-    Geen antwoord op u vraag gevonden? Vul hier dan ons contactformulier in!
-    (U zult binnen 2 werkdagen reactie ontvangen.)
 
-    Niet geholpen? Dan kunt u onze klantenservice hier bereiken!:
-  </p>
+
+
+  <div id="FormContainer">
+    <h3 id="titelMain">Contactformulier</h3>
+    <form id="form1" action="php/contact.php" method="POST">
+
+        <label class="Label" for="1">Voornaam</label>
+        <input type="text" name="1" class="input" id="VNaam" placeholder="Schrijf hier uw voornaam...">
+        <br>
+
+        <label class="Label" for="4">Achternaam</label>
+        <input type="text" name="4" class="input" id="ANaam" placeholder="Schrijf hier uw achternaam...">
+        <br>
+
+        <label for="2">E-mail</label>
+        <input type="text" name="2" class="input" id="email" placeholder="Schrijf hier uw e-mailadres...">
+        <br>
+
+        <label for="3">Telefoonnummer</label>
+        <input type="text" name="3" class="input" id="telefoon" placeholder="Schrijf hier uw telefoonnummer...">
+        <br>
+
+
+
+
+
+
+        <label for="5">Bericht</label>
+        <textarea type="text" name="5" class="input" id="TextBox"
+            placeholder="Schrijf hier uw bericht..."></textarea>
+
+
+        <input type="submit" value="Stuur bericht" id="sub" name="submit">
+    </form>
+</div>
 
 
   <div id="footer"></div>

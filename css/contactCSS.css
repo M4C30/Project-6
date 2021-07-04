@@ -5,9 +5,9 @@
 
 /* ========== TYP HIERONDER JOUW CODE ========== */
 .container-fluid{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 2%;
 
 }
 
@@ -31,7 +31,7 @@ background-color: black;
     height: 75px;
   width: 100%;
   padding:0 5px;
-  border: 2px solid #6db5ff;  
+  border: 2px solid black;  
   cursor: pointer;
   border-radius: 50px;
   margin: 10px 0;
@@ -55,12 +55,12 @@ transition: all .5s ease-in;
     margin: 0;
     padding: 3px 0 0 0;
     font-weight: normal;
-    color: #1f5c9a;
+    color: black;
 }
 
 .panel{
     padding: 0 15px;
-    border-left: 1px solid #6db5ff;
+    border-left: 1px solid black;
     margin-left: 25px;
     font-size: 14px;
     text-align: justify;
@@ -74,11 +74,12 @@ footer{
 }
 
 #h1{
-    margin-left: 30px;
+    text-align: center;
 }
 
 #h3{
     margin-left: 30px;
+    text-align: center;
 
 }
 
@@ -86,3 +87,85 @@ footer{
     background: url("/images/Minus.png") no-repeat -4px -5px #fff;
     background-size: 130%;
 }
+
+
+
+
+
+
+/* form */
+
+
+#titelMain{
+    margin-left: 36.5%;
+    margin-top: 0;
+}
+.input {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+#FormContainer {
+    height: 630px;
+    width: 600px;
+    padding: 5px;
+    border: black solid 1px;
+    margin: 0;
+    position: relative;
+    top: 0%;
+    left: 85%;
+    transform: translate(-150%, 10%);
+}
+#form1 {
+    padding: 10px;
+    width: 550px;
+}
+    
+    #VNaam {
+        margin-top: 10px;
+        width: 550px;
+        padding: 4px;
+        border: none;
+    }
+    #ANaam {
+        margin-top: 10px;
+        width: 550px;
+        padding: 4px;
+        border: none;
+    }
+    #VNaam:hover{
+        border: 1px black solid;
+    }
+    #ANaam:hover{
+        border: 1px black solid;
+    }
+
+    #email, #telefoon, #bod{
+        margin-top: 10px;
+        width: 550px;
+        padding: 4px;
+        border: none;
+    }
+    #email:hover, #telefoon:hover, #bod:hover{
+        border: 1px black solid;
+    }
+
+    #TextBox{
+        resize: horizontal;
+        margin-top: 10px;
+        height: 100px;
+        width: 550px;
+        padding: 4px;
+        border: none;
+        max-width: 100%;
+    }
+    #TextBox:hover{
+        border: 1px black solid;
+    }
+    #sub {
+        padding: 4px;
+       
+    }
+    .check{
+    
+    }
