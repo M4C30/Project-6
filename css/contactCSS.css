@@ -28,6 +28,7 @@ background-color: black;
 }
 
 .accordion{
+    height: 75px;
   width: 100%;
   padding:0 5px;
   border: 2px solid #6db5ff;  
@@ -42,7 +43,7 @@ background-color: black;
 margin: 0 10px 0 0;
 width: 30px;
 height: 30px;
-background-image: url("/images/PlusVector2.png");
+background: url("/images/plus-icon-21715.png");
 background-size:100%;
 border-radius: 50%;
 float: left;
@@ -81,6 +82,7 @@ footer{
 
 }
 
-.ctive .icon{
-    background: url();
+.active1 .icon{
+    background: url("/images/Minus.png") no-repeat -4px -5px #fff;
+    background-size: 130%;
 }
