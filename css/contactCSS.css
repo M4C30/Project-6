@@ -70,7 +70,7 @@ transition: all .5s ease-in;
 }
 
 footer{
-    margin-bottom: -1000px;
+    margin-bottom: -900px;
 }
 
 #h1{
@@ -106,7 +106,7 @@ footer{
     margin-bottom: 5px;
 }
 #FormContainer {
-    height: 630px;
+    height: 530px;
     width: 600px;
     padding: 5px;
     border: black solid 1px;
