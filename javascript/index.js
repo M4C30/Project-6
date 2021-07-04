@@ -58,7 +58,7 @@ console.log("Slide Top: " + slidePosition.top);
 
 
 
-screen.addEventListener("click", test) 
+
 setTimeout(typeSlogan(), 3000);
 typeTitle();
 
