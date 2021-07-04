@@ -7,17 +7,7 @@ body{
     height: 1000px;
 }
 footer{
-    margin-bottom: -3000px;
-}
-#screen{
-    position: absolute;
-    z-index: 100;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    left: 50%;
-    top: 80%;
-    position: fixed;
+    margin-bottom: -1500px;
 }
 #start{
     margin-top: 100px;
@@ -63,24 +53,32 @@ footer{
 
 #promotie{
     position: absolute;
-    top: 100%;
+    top: 75%;
     width: 80%;
     height: 600px;
     left: 10%;
-    overflow: hidden;
-    border: 1px solid black;
+    
 }
 #slides{
-    border: 1px solid black;
+    margin-top: -1010px;
+    height: 600px;
+    width: 80%;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    visibility: hidden;
+}
+#slide1{
+    position: absolute;
     height: 100%;
     width: 90%;
-    margin: auto;
     text-align: left;
     background-image: url('/images/gif3.gif');
     background-position: right;
+    overflow-y: hidden;
     background-repeat: no-repeat;
     background-size: 55%;
-    animation: slidein 1s;
+    border-bottom: 1px solid black;
 }
 
 #mainSlideText{
@@ -92,12 +90,61 @@ footer{
     opacity: 0;
 }
 #slideP{
-    margin-top: 250px;
-    margin-left: 10px;
+    position: absolute;
+    top: 550px;
+    left: 20px;
     text-decoration: underline;
 }
 
-/*======== Keyframe =======*/
+#slideButtons{
+    position: absolute;
+    top: 91%;
+    left: 40%;
+    width: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    animation: fadein 4s;
+    z-index: 1;
+}
+#slideButtons i{
+    text-align: center;
+    cursor: pointer;
+}
+.allSlides{
+    z-index: -1;
+}
+
+#premiumDiv{
+    margin-top: 40%;
+    width: 75%;
+    margin-left: 15%;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#premiumText{
+    padding-left: 20px;
+}
+#premiumText ul{
+    margin-top: 50px;
+}
+#premiumText h2{
+    font-size: 35px;
+    margin-top: 80px;
+}
+#premiumText li{
+    list-style:square;
+    white-space: pre-line;
+}
+#logoPremium{
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/kroon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*======== Keyframes =======*/
 @keyframes fadein{
     from {
         opacity: 0;
@@ -106,9 +153,10 @@ footer{
         opacity: 1;
     }
 }
+
 @keyframes slidein{
     from {
-        margin-top: -500px;
+        margin-top: -1010px;
     }
     to {
         margin-top: 0;
