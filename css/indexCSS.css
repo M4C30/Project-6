@@ -73,7 +73,7 @@ footer{
     height: 100%;
     width: 90%;
     text-align: left;
-    background-image: url('/images/gif3.gif');
+    background-image: url('gif3.gif');
     background-position: right;
     overflow-y: hidden;
     background-repeat: no-repeat;

@@ -64,21 +64,21 @@ setInterval(function(){
 
 function currentSlide(now){
     if (now == 1){
-      slide1.style.backgroundImage = "url('/images/gif3.gif')";
+      slide1.style.backgroundImage = "url('images/gif3.gif')";
       slideB2.className = "far fa-circle";
       slideB1.className = "fas fa-circle";
       slideB3.className = "far fa-circle";
       mainSlideText.innerHTML = "Gemakkelijk jouw planningen <br>ordenen op de gewenste dagen.";
     }
     if (now == 2){
-      slide1.style.backgroundImage = "url('/images/gif2.gif')";
+      slide1.style.backgroundImage = "url('images/gif2.gif')";
       slideB2.className = "fas fa-circle";
       slideB3.className = "far fa-circle";
       slideB1.className = "far fa-circle";
       mainSlideText.innerHTML = "Meteen verder kunnen met de <br>opgegeven opdracht.";
     }
     if (now == 3){
-      slide1.style.backgroundImage = "url('/images/gif1.gif')";
+      slide1.style.backgroundImage = "url('images/gif1.gif')";
       slideB3.className = "fas fa-circle";
       slideB2.className = "far fa-circle";
       slideB1.className = "far fa-circle";
